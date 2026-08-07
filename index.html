@@ -5,24 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tecomsa | NOC Ticketing</title>
     
-    <!-- This sets your custom tab logo perfectly -->
-    <link rel="icon" type="image/png" href="https://google.com">
+    <!-- 1. Custom Tab Logo using your uploaded GitHub image -->
+    <link rel="icon" type="image/png" href="logo.png">
     
     <style>
-        /* Erases all native browser borders and scrollbars */
         html, body {
             margin: 0 !important;
             padding: 0 !important;
             width: 100% !important;
             height: 100% !important;
             overflow: hidden; 
-            background-color: #f4f6f9; /* Matches your clean login background */
+            background-color: #f4f6f9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
         }
         
-        /* Forces your Tecomsa NOC app to fill 100% of the display */
+        .header-bar {
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            z-index: 100;
+        }
+
+        .header-bar img {
+            height: 45px; /* Adjust this number to make the logo larger or smaller */
+            width: auto;
+            object-fit: contain;
+        }
+        
         iframe {
+            flex-grow: 1;
             width: 100vw !important;
-            height: 100vh !important;
             border: none !important;
             display: block;
             margin: 0;
@@ -32,7 +50,11 @@
 </head>
 <body>
 
-    <!-- Your exact live Web App URL embedded securely -->
+    <!-- 2. Display your company logo right above the portal -->
+    <div class="header-bar">
+        <img src="logo.png" alt="Tecomsa Logo">
+    </div>
+
     <iframe src="https://script.google.com/macros/s/AKfycbyDZ7YgqhtEsZ1WdR3nki5KYyhQxJ2pyDaR9XQqTOXzsQvcsDKo-Izi8D-FDn5T3Hr0SA/exec"></iframe>
 
 </body>
