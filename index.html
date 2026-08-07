@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tecomsa | NOC Ticketing</title>
     
-    <!-- ⚡ ABSOLUTE ROUTING FIX: Directing the browser to look inside your specific folder -->
+    <!-- Custom Tab Favicon (Keep this since it's working!) -->
     <link rel="icon" type="image/png" href="/Tecomsa-NOC-Ticketing-Portal-/logo.png?v=3">
     <link rel="shortcut icon" type="image/png" href="/Tecomsa-NOC-Ticketing-Portal-/logo.png?v=3">
     <link rel="apple-touch-icon" href="/Tecomsa-NOC-Ticketing-Portal-/logo.png?v=3">
     
     <style>
+        /* Erases all margins and sets the canvas frame dimensions */
         html, body {
             margin: 0 !important;
             padding: 0 !important;
@@ -18,31 +19,12 @@
             height: 100% !important;
             overflow: hidden; 
             background-color: #f4f6f9;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            display: flex;
-            flex-direction: column;
         }
         
-        .header-bar {
-            width: 100%;
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px 0;
-            z-index: 100;
-        }
-
-        .header-bar img {
-            height: 45px;
-            width: auto;
-            object-fit: contain;
-        }
-        
+        /* Forces your ticketing portal frame to occupy 100% of the viewport screen */
         iframe {
-            flex-grow: 1;
             width: 100vw !important;
+            height: 100vh !important;
             border: none !important;
             display: block;
             margin: 0;
@@ -52,12 +34,7 @@
 </head>
 <body>
 
-    <div class="header-bar">
-        <!-- ⚡ ABSOLUTE ROUTING FIX: Ensures the top layout banner image loads smoothly -->
-        <img src="/Tecomsa-NOC-Ticketing-Portal-/logo.png" alt="Tecomsa Logo">
-    </div>
-
-    <!-- Your live deployment script environment -->
+    <!-- Embedded Google Script Web App Main Window Container -->
     <iframe src="https://google.com"></iframe>
 
 </body>
