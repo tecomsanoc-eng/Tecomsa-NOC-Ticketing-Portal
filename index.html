@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tecomsa | NOC Ticketing</title>
     
-    <!-- 1. Custom Tab Logo using your uploaded GitHub image -->
-    <link rel="icon" type="image/png" href="logo.png">
+    <!-- ⚡ Force browser cache-clear with explicit icon type routing -->
+    <link rel="icon" type="image/png" href="./logo.png?v=1">
+    <link rel="shortcut icon" type="image/png" href="./logo.png?v=1">
+    <link rel="apple-touch-icon" href="./logo.png?v=1">
     
     <style>
         html, body {
@@ -33,7 +35,7 @@
         }
 
         .header-bar img {
-            height: 45px; /* Adjust this number to make the logo larger or smaller */
+            height: 45px;
             width: auto;
             object-fit: contain;
         }
@@ -50,11 +52,11 @@
 </head>
 <body>
 
-    <!-- 2. Display your company logo right above the portal -->
     <div class="header-bar">
-        <img src="logo.png" alt="Tecomsa Logo">
+        <img src="./logo.png" alt="Tecomsa Logo">
     </div>
 
+    <!-- Your updated web app endpoint -->
     <iframe src="https://script.google.com/macros/s/AKfycbyDZ7YgqhtEsZ1WdR3nki5KYyhQxJ2pyDaR9XQqTOXzsQvcsDKo-Izi8D-FDn5T3Hr0SA/exec"></iframe>
 
 </body>
